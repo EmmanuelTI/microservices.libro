@@ -45,7 +45,7 @@ if (app.Environment.IsDevelopment())
 }
 
 // Habilitar CORS
-app.UseCors("PermitirReact");
+app.UseCors("PermitirTodos");
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
