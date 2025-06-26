@@ -1,0 +1,47 @@
+# Archivos y carpetas generados por herramientas de desarrollo
+.vs/
+.vscode/
+.idea/
+*.iml
+
+# Archivos de compilación y temporales
+bin/
+obj/
+**/bin/
+**/obj/
+
+# Archivos específicos de configuración y depuración
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.dbmdl
+*.jfm
+
+
+
+
+# Node.js (si aplica)
+node_modules/
+npm-debug.log
+
+# Archivos sensibles y temporales
+.env
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# Archivos generados por Git
+.git/
+!.gitignore
+
+# Otros archivos
+*.class
+*.project
+*.settings
+*.toolstarget
+
+# Archivos y carpetas de documentación
+LICENSE
+README.md
