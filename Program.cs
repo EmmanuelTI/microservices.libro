@@ -19,15 +19,17 @@ builder.Services.AddDbContext<ContextoLibreria>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 // Configurar CORS
+
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("PermitirReact", policy =>
+    options.AddPolicy("PermitirTodos", policy =>
     {
-        policy.WithOrigins("http://localhost:3000") // URL de tu aplicación React
-              .AllowAnyHeader()
-              .AllowAnyMethod();
+        policy.AllowAnyOrigin()   // Permitir cualquier origen
+              .AllowAnyHeader()   // Permitir cualquier encabezado
+              .AllowAnyMethod();  // Permitir cualquier método (GET, POST, etc.)
     });
 });
+
 
 // Servicios personalizados (como validadores, etc.)
 builder.Services.AddCustomServices(builder.Configuration);
